@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Full-screen background gradient */
+.login-page {
+  background: linear-gradient(to bottom right, #7ba0db, #91a8da);
+  min-height: 100vh; /* Ensure it covers the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the login box */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Reasonable size for the login box */
+  padding: 2rem;
+}
+
+/* Login box styling */
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Form field input adjustments */
+input,
+select {
+  padding: 0.6rem;  /* Smaller padding for a compact look */
+  font-size: 1rem;  /* Smaller font size for better readability */
+  width: 100%;
+}
+
+/* Only style buttons inside the login form */
+.login-box button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #3b82f6;
+}
+
+
+/* Focus styling for inputs */
+input:focus,
+select:focus {
+  border-color: #3b82f6;  /* Blue border on focus */
+  outline: none;
+}
